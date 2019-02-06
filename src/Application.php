@@ -54,6 +54,9 @@ class Application extends BaseApplication
         if (Configure::read('debug')) {
             $this->addPlugin(\DebugKit\Plugin::class);
         }
+
+        // Add Cors plugin
+        $this->addPlugin('Cors');
     }
 
     /**
